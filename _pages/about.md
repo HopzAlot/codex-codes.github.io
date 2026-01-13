@@ -7,7 +7,7 @@ subtitle: <h5><strong>Solving and Automating Complex Tasks!!</strong></h5>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.webp
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Computer Enginner, NUST</p>

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '3.4.8'  # match workflow Ruby version
+ruby '3.4.6'  # match workflow Ruby version
 
 # Core Jekyll gem
 gem 'jekyll'
