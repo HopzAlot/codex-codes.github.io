@@ -15,7 +15,7 @@ The simulator provides a safe and efficient way to test coordination and control
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/dronesimulator_uml.jpg" title="System Architecture UML" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/dronesimulator_uml.webp" title="System Architecture UML" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -58,7 +58,7 @@ $$\dot{\omega} = I^{-1}(\tau - \omega \times (I\omega))$$
         <div class="card p-3">
             <strong>Technical Specifications:</strong>
             <ul>
-                <li><strong>Language:</strong> Java</li>
+                <li><strong>Language:</strong> Java, JSwing(GUI)</li>
                 <li><strong>Model:</strong> Discrete-time steps ($\Delta t$)</li>
                 <li><strong>Physics:</strong> Newton-Euler equations</li>
                 <li><strong>Outputs:</strong> CSV (telemetry) and TXT (summaries)</li>
