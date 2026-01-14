@@ -2,7 +2,7 @@
 layout: page
 title: Autonomous Drone Fleet Simulator
 description: A high-fidelity 3D simulation for modeling collective quadrotor drone behavior.
-img: assets/img/dronesimulator_uml.webp
+img:
 importance: 3
 category: Side Projects
 ---
