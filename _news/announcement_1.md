@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started Working on an idea about AI Food recommenations called BhookBusters. Will update soon.
+Started Working on an idea about AI Food recommenation system called PaitPooja. Will update soon.
