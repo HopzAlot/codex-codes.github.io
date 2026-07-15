@@ -5,6 +5,7 @@ description: AI safety audit platform for multilingual harmful-request refusal t
 img:
 importance: 1
 category: Side Projects
+github: https://github.com/HopzAlot/Chaukidar
 giscus_comments: false
 ---
 
@@ -68,5 +69,9 @@ For multilingual users, this kind of audit can help ensure harmful requests are 
 You can try the deployed project here:  
 **[Chaukidar](https://chaukidar.vercel.app/)**
 
-**Small Note:** The backend is deployed on Render, so if it has been inactive, it may take around a minute to wake up. Chaukidar also goes for tea break from time to time hehe...
+## Link to the CodeBase
 
+You can explore the source code here:  
+**[GitHub: Chaukidar](https://github.com/HopzAlot/Chaukidar)**
+
+**Small Note:** The backend is deployed on Render, so if it has been inactive, it may take around a minute to wake up. Chaukidar also goes for tea break from time to time hehe...
