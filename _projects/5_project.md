@@ -1,14 +1,13 @@
 ---
 layout: page
-title: Chaukidar
+title: Chaukidar (Watchman)
 description: AI safety audit platform for multilingual harmful-request refusal testing.
-img: assets/img/chaukidar.png
+img:
 importance: 1
 category: Side Projects
 giscus_comments: false
 ---
 
-## Chaukidar(Watchman) - Multilingual AI Safety Audit Platform
 
 **Chaukidar** is an AI safety audit platform that evaluates whether language models refuse harmful requests consistently across English, Urdu, Punjabi, Pashto, and Sindhi.
 
