@@ -1,80 +1,73 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: 
+title: Chaukidar
+description: AI safety audit platform for multilingual harmful-request refusal testing.
+img: assets/img/chaukidar.png
+importance: 1
+category: Side Projects
+giscus_comments: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Chaukidar(Watchman) - Multilingual AI Safety Audit Platform
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**Chaukidar** is an AI safety audit platform that evaluates whether language models refuse harmful requests consistently across English, Urdu, Punjabi, Pashto, and Sindhi.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The project focuses on an important safety gap: a model may refuse dangerous requests in English, but behave differently when the same intent appears in regional languages, translated prompts, or native-adapted phrasing.
+
+---
+
+## System Overview
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/chaukidar.png" title="Chaukidar dashboard" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Chaukidar's audit interface for scanning refusal coverage across languages, harm categories, and prompt tracks.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+- **Frontend:** Responsive web interface for running and reviewing audits
+- **Audit Scope:** English, Urdu, Punjabi, Pashto, and Sindhi
+- **Safety Focus:** Harmful-request refusal consistency
+- **Prompt Tracks:** English seed prompts, translated baselines, and native-adapted prompts
+- **Output:** Coverage-style audit results that make language-specific safety gaps easier to spot
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+---
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+## Core Idea
 
-{% raw %}
+Chaukidar compares model behavior across prompt variants:
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+> **English refusal baseline vs translated prompt vs native-adapted prompt**
 
-{% endraw %}
+This makes it easier to identify cases where safety alignment is strong in English but weaker in another language or cultural context.
+
+---
+
+## Key Features
+
+- **Multilingual audit matrix** for scanning refusal coverage across language and harm categories
+- **Side-by-side prompt strategy** using English seed, translated, and native-adapted prompts
+- **Past audit views** for revisiting previous model safety checks
+- **Sample audit flow** for quickly demonstrating the platform
+- **Clear visual reporting** to highlight where model refusal behavior changes
+- **Regional language focus** for safety testing beyond English-only evaluation
+
+---
+
+## Why It Matters
+
+Many AI safety evaluations are strongest around English data. Chaukidar helps surface hidden risks by testing whether safety behavior survives translation, local phrasing, and language-specific expression.
+
+For multilingual users, this kind of audit can help ensure harmful requests are handled consistently, not just in the highest-resource language.
+
+---
+
+## Link to the Live Project
+
+You can try the deployed project here:  
+**[Chaukidar](https://chaukidar.vercel.app/)**
+
+**Small Note:** The backend is deployed on Render, so if it has been inactive, it may take around a minute to wake up. Chaukidar also goes for tea break from time to time hehe...
+
