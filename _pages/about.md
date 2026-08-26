@@ -29,11 +29,12 @@ My learning approach is heavily project-driven, focusing on backend development,
 
 I am particularly interested in the intersection of backend engineering and DevOps—how services communicate, how systems scale, and how infrastructure design impacts performance and reliability. My goal is to grow into an engineer capable of designing, deploying, and maintaining production-grade systems that solve real-world problems.
 
-**Languages:** Python, Java, C++, JavaScript
+**Languages:** Python, Java, C++, JavaScript, Go
 
 **Development Stack:** Django, Express, NextJS, React
 
 **Database:** PostgreSQL
+
 **Cloud & DevOps:** AWS, Docker, GitHub Actions
 
 **Tools I'm learning:** Kubernetes, Terraform, Prometheus, Grafana, Jenkins
