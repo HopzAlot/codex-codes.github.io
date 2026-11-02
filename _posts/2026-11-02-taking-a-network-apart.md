@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Weekend of Taking a Network Apart
+title: A Weekend of Making Network Tunnels
 date: 2026-11-02 12:00:00
 description: Notes from a weekend of curiosity about proxies, virtual network cards, and how a tunnel can hide inside an ordinary-looking HTTPS connection.
 tags: networking linux proxies learning
