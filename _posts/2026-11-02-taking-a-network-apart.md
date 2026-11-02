@@ -43,9 +43,7 @@ I could check this against my own logs instead of just reading about it. The ses
 Honestly, this is where I learned the most, and where I was wrong the most.
 
 - **Failure modes carry information.** A *timeout* means packets vanish on the way. An `EOF` means the connection opened and was then closed. A certificate error naming a domain that isn't mine meant something *else* was answering. Each rules out a different part of the stack.
-- **A cascade of ordinary mistakes.** A placeholder left in the address field, a private IP where a public one belonged, a download for the wrong CPU architecture, command-line flags with one dash instead of two.
 - **The longest bug.** The keys and short IDs were all correct, and the handshake still failed. The server's log showed it failing *after* authentication succeeded. I chased the wrong suspects first: a firewall, a post-quantum key exchange, the client fingerprint. What fixed it was changing the site the server imitates from one with a huge certificate to one with a tiny one. I suspect the large certificate was the cause, but I never proved the mechanism, so I've left it as a suspicion in my notes.
-- **A test that lied to me.** One "proof" that the tunnel worked was invalid, because a proxy variable was still set in my shell and the request never touched the tunnel. The clean version of the test was checking that the destination appeared in the tunnel tool's own log.
 
 ## The wall I didn't see coming
 
